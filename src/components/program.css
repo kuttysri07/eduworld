@@ -1,0 +1,55 @@
+.container{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+   
+   
+
+}
+
+.program{
+    position: relative;
+}
+
+ .model{
+    width: 300px;
+    border-radius: 10px;
+    
+}
+
+.caption{
+    position: absolute;
+    z-index: 1;
+    background-image: linear-gradient(rgba(0, 128, 0, 0.704),rgba(0, 128, 0, 0.414)) ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 120%;
+    transition: 0.6s;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.program:hover .caption{
+    margin-top: 0;
+    opacity: 1;
+   
+}
+
+.caption img{
+    width: 20%;
+}
+
+.caption p{
+    color: white;
+}
+

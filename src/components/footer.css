@@ -1,0 +1,36 @@
+.footer {
+    height: auto; /* Adjust height to auto for flexibility */
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid;
+    margin: 10px 2%;
+    padding: 10px 0; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    display: inline-block; /* Change to inline-block for better alignment */
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer {
+        height: 2vh;
+        justify-content: center; /* Center items on smaller screens */
+        margin: 30% 2%;
+    }
+
+    .footer ul li {
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+}

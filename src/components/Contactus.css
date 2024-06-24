@@ -1,0 +1,84 @@
+.contactus {
+    height: auto; /* Adjust height to auto for flexibility */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Set to column by default for mobile view */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.contact {
+    flex-basis: 100%; /* Take full width on small screens */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.contact ul li {
+    display: flex;
+    align-items: center;
+}
+
+.contact img {
+    width: 10%;
+    padding: 3px;
+    margin: 5px 0;
+}
+
+.contact p {
+    text-align: justify;
+    margin: 5px 0;
+}
+
+.contact h3 {
+    font-size: large;
+    color: green;
+    padding: 0;
+    margin: 5px 0;
+}
+
+.contact form input,
+.contact form textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    outline: 0;
+    border: 0;
+    background-color: rgba(41, 255, 41, 0.471);
+    border-radius: 20px;
+}
+
+.btn {
+    background-color: green;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 20px;
+    color: white;
+    border: 0;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+span {
+    font-size: 0.7rem;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .contactus {
+        flex-direction: row; /* Switch to row layout for tablets and above */
+        height: 80vh; /* Set height for larger screens */
+        margin: 0 5%; /* Adjust margin for larger screens */
+    }
+
+    .contact {
+        flex-basis: 43%; /* Set flex-basis for larger screens */
+        margin-bottom: 0; /* Remove margin for larger screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .contactus {
+        margin: 0 17%; /* Restore original margin for desktop */
+    }
+}
